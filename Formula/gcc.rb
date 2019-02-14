@@ -87,7 +87,7 @@ class Gcc < Formula
         args << "--with-sysroot=#{MacOS.sdk_path}"
       elsif MacOS.version >= :mojave
         # System headers are no longer located in /usr/include
-        args << "--with-native-system-header-dir=/usr/include"
+        args << "--with-native-system-header-dir=/usr/local/include"
         args << "--with-sysroot=/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk"
       end
 
